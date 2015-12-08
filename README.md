@@ -5,7 +5,7 @@
 
 繁體中文翻譯完成的將上傳至 [PocketMine-MP 伺服插件資源網](http://pocketmineplugins.reh.tw/) **(此網站未完工，因本人和其工程人員都是高職學生，所以更新較慢)**
 
-插件翻譯進度:
+### 插件翻譯進度：
 - [X] SimpleAuth
 - [X] SimpleAuthHelper
 - [X] SignStatus
