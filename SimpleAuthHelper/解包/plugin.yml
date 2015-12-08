@@ -1,0 +1,27 @@
+main: aliuly\helper\Main
+api: 1.10.0
+load: POSTWORLD
+depend: [SimpleAuth]
+
+name: SimpleAuthHelper
+description: 簡化進行伺服器身份驗證。翻譯：旋風之音 (http://PocketMinePlugins.reh.tw)
+version: 1.2.2
+author: aliuly
+
+commands:
+  chpwd:
+    description: "更改密碼"
+    usage: "/chpwd <舊密碼>"
+    permission: simpleauthhelper.command.chpwd
+  resetpwd:
+    description: "重設密碼"
+    usage: "/resetpwd <玩家>"
+    permission: simpleauthhelper.command.resetpwd
+
+permissions:
+  simpleauthhelper.command.chpwd:
+    default: true
+    description: "允許用戶更改密碼"
+  simpleauthhelper.command.resetpwd:
+    default: op
+    description: "允許管理員重置其他用戶的密碼"

@@ -1,0 +1,28 @@
+main: aliuly\itemcasepe\Main
+api: [1.10.0, 1.13.0]
+load: POSTWORLD
+
+name: ItemCasePE
+description: Bukkit ItemCase 的實現
+version: 1.0.8
+author: aliuly
+translation: PocketMine-MP 伺服插件資源網 (http://PocketMinePlugins.reh.tw)
+
+commands:
+  itemcase:
+    description: ItemCase 管理指令
+    usage: "/itemcase [add|cancel|respawn]"
+    aliases: [ic]
+    permission: itemcase.cmd
+
+permissions:
+ itemcase:
+  default: false
+  description: "讓玩家訪問所有 itemcase 功能"
+  children:
+   itemcase.cmd:
+    default: op
+    description: "讓玩家接觸到 itemcase 指令"
+   itemcase.destroy:
+    default: op
+    description: "讓玩家破壞 cases"

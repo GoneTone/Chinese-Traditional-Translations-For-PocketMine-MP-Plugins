@@ -1,0 +1,43 @@
+name: SimpleAuth
+main: SimpleAuth\SimpleAuth
+version: 1.7.0
+api: 1.12.0
+load: STARTUP
+author: PocketMine Team
+authors: [shoghicp]
+description: 防止人冒充一個帳戶，連接時需要註冊和登錄。翻譯：旋風之音 (http://PocketMinePlugins.reh.tw)
+website: https://github.com/PocketMine/SimpleAuth
+commands:
+ login:
+  description: "登錄到帳號"
+  usage: "/login <password>"
+  permission: simpleauth.command.login
+ register:
+  description: "註冊一個帳號"
+  usage: "/register <password>"
+  permission: simpleauth.command.register
+
+permissions:
+ simpleauth:
+  default: op
+  description: "允許使用一切 SimpleAuth 擁有"
+  children:
+   simpleauth.chat:
+    description: "允許使用聊天，而沒有被驗證"
+    default: false
+   simpleauth.move:
+    description: "允許移動，而沒有被認證"
+    default: false
+   simpleauth.lastid:
+    description: "使用最後的ID時，在配置啟用允許驗證"
+    default: true
+   simpleauth.command:
+    description: "允許使用 SimpleAuth 指令"
+    default: true
+    children:
+     simpleauth.command.register:
+      description: "允許註冊一個帳號"
+      default: true
+     simpleauth.command.login:
+      description: "允許登錄到帳號"
+      default: true

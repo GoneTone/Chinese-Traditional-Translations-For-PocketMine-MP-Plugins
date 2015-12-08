@@ -1,0 +1,18 @@
+name: ServerTest
+main: ServerTest\MainClass
+version: 1.0.0
+api: [1.0.0]
+load: POSTWORLD
+author: MUedsa
+description: Server Test
+website: http://www.cattery.cn
+translation: PocketMine-MP 伺服插件資源網 (http://PocketMinePlugins.reh.tw)
+commands:
+ servertest:
+  description: 伺服器性能測試指令
+  usage: "用法: /example"
+  permission: servertest.command.test
+permissions:
+ servertest.command.test:
+  description: "允許用戶運行伺服器性能測試指令"
+  default: true

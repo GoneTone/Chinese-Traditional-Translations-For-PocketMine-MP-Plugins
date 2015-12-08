@@ -1,0 +1,23 @@
+name: BanItemAdd
+version: "1.2.1"
+api: [1.9.0]
+author: zzx
+description: 禁用物品插件(可設置管理員)。翻譯：旋風之音 (http://PocketMinePlugins.reh.tw)
+main: BanItem\BanItem
+
+commands:
+ banitem:
+  description: banitem (item/admin/list) 添加/刪除
+  permission: banitem.command.banitem
+  usage: "/banitem (item/admin/list)"
+permissions:
+  banitem:
+    default: false
+    description: "允許使用所有 BanItem 功能。"
+    children:
+      banitem.*:
+        default: false
+        description: "允許使用所有 BanItem 功能。"
+      banitem.command.banitem:
+        default: op
+        description: "允許使用 banitem 指令。"

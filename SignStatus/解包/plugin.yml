@@ -1,0 +1,10 @@
+name: SignStatus
+main: SignStatus\SignStatus
+version: 2.1
+author: xpyctum
+api: [1.0.0]
+load: POSTWORLD
+permissions:
+ signstatus:
+  default: op
+  description: 可以創建狀態告示牌

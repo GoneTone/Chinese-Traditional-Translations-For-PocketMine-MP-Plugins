@@ -1,0 +1,29 @@
+# SimpleAuth 1.4.0 語言文件
+# 語言：zh_TW，旋風之音 翻譯
+# http://PocketMinePlugins.reh.tw
+
+join:
+ message1: "§7翻譯：旋風之音 (http://PocketMinePlugins.reh.tw)\n§7此伺服器要求賬戶註冊。"
+ message2: "您必須進行身份驗證才能遊戲。"
+ register: "請註冊，使用: /register <密碼>"
+ login: "請登錄，使用: /login <密碼>"
+ popup: "您尚未登入"
+
+register:
+ usage: "/register <密碼>"
+ description: "註冊一個帳號"
+ permission: "您沒有權限使用註冊指令！"
+ error:
+  password: "您的密碼太短了！"
+  registered: "此帳戶已被註冊。"
+  general: "身份驗證過程中出現錯誤。"
+
+login:
+ usage: "/login <密碼>"
+ description: "登錄到一個帳號"
+ permission: "您沒有權限使用登錄指令！"
+ success: "您已經通過驗證。"
+ error:
+  password: "密碼不正確！"
+  registered: "此帳戶未註冊。"
+  block: "太多的嘗試！"

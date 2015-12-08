@@ -1,0 +1,46 @@
+name: DevTools
+main: DevTools\DevTools
+version: 1.10.0
+api: 1.3.1
+load: STARTUP
+author: PocketMine Team
+description: 幫助開發和分發 PocketMine-MP 插件
+website: https://github.com/PocketMine/DevTools
+commands:
+ makeserver:
+  description: 創建 PocketMine-MP Phar
+  usage: "/makeserver"
+  permission: devtools.command.makeserver
+ makeplugin:
+  description: 從源代碼形式創建一個Phar插件
+  usage: "/makeplugin <pluginName>"
+  permission: devtools.command.makeplugin
+ checkperm:
+  description: 檢查權限值為當前發件人，還是球員
+  usage: "/checkperm <node> [playerName]"
+  permission: "devtools.command.checkperm;devtools.command.checkperm.other"
+permissions:
+ devtools:
+  default: op
+  description: "允許使用所有 DevTools 的東西"
+  children:
+   devtools.command:
+    default: op
+    description: "允許使用所有的 DevTools 命令"
+    children:
+     devtools.command.makeplugin:
+      default: op
+      description: "允許創建 Phar 插件"
+     devtools.command.extractplugin:
+      default: op
+      description: "允許提取 Phar 插件"
+     devtools.command.makeserver:
+      default: op
+      description: "允許創建 PocketMine-MP Phar"
+     devtools.command.checkperm:
+      default: true
+      description: "允許檢查權限值"
+      children:
+       devtools.command.checkperm.other:
+        default: op
+        description: "允許查看他人的許可值"

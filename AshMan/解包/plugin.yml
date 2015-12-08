@@ -1,0 +1,23 @@
+name: AshMan
+main: FCleaner\Main
+version: 1.0.1
+api: [1.0.0]
+load: STARTUP
+author: FENGberd,Alcatraz_Du
+commands:
+ clean:
+  permission: FCleaner.command.clean
+  description: FCleaner主命令
+  usage: /clean <clean|reload>
+permissions:
+ FCleaner.*:
+  default: op
+  description: 根權限
+  children:
+  FCleaner.command:
+   default: op
+   description: 所有指令權限
+   children:
+    FCleaner.command.clean:
+     default: op
+     description: 清理掉落物指令
