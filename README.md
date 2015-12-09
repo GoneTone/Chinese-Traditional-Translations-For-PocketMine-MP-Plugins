@@ -14,4 +14,4 @@
 - [X] SignStatus
 - [X] SimpleAuth
 - [X] SimpleAuthHelper
-- [ ] SpecialBlock
+- [X] SpecialBlock
