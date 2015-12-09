@@ -1,0 +1,24 @@
+---
+# General
+interval: 10
+# Damage Block
+broadcast-on-chat: false
+damage: 2
+damage-block-name: Obsidian
+damage-block: 49
+death-message: '§l{PLAYER} died from standing on §4{BLOCK}'
+# Effect
+effect-block: 246
+effect-id: 1
+effect-amplifier: 2
+effect-visibility: false
+effect-duration: 1800
+send-message-on-recieve: false
+send-popup-on-recieve: false
+effect-message: '§l§2<< §aEffect recieved §2>>'
+effect-popup: '§l§2<< §aEffect recieved §2>>'
+# Healing Block
+healing-block: 121
+healing-message: '§l§2<< §aHealing §2>>'
+hp-gain: 2
+...

@@ -1,0 +1,7 @@
+---
+damage: 5
+damage-block: Obsidian
+interval: 10
+death-message: "{PLAYER} died from standing on {BLOCK}"
+broadcast-on-chat: false
+...
