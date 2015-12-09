@@ -5,12 +5,13 @@
 
 繁體中文翻譯完成的將上傳至 `PocketMine-MP 伺服插件資源網` **(此網站未完工，因本人和其工程人員都是高職學生，所以更新較慢)**
 
-### 插件翻譯進度：
-- [X] SimpleAuth
-- [X] SimpleAuthHelper
-- [X] SignStatus
-- [X] DevTools
+### 插件翻譯進度 (字母排序)：
 - [X] AshMan
 - [X] BanItemAdd
-- [X] ServerTest
+- [X] DevTools
 - [X] ItemCasePE
+- [X] ServerTest
+- [X] SignStatus
+- [X] SimpleAuth
+- [X] SimpleAuthHelper
+- [ ] SpecialBlock
