@@ -41,14 +41,14 @@ class Main extends PluginBase implements Listener{
 		));
 		// -------------------------------------------------------------
 		$this->blockCmds = new Config($this->getDataFolder()."block_cmds.yml", Config::YAML, $default);
-		$this->getLogger()->info("??");
+		$this->getLogger()->info("激活\nยง7翻譯：PocketMine-MP 伺服插件資源網 (http://PocketMinePlugins.reh.tw)");
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		$this->saveDefaultConfig();
 		$this->reloadConfig();
 		$this->getServer()->getScheduler()->scheduleRepeatingTask(new Timer($this), $this->interval);
 	}
 	public function onDisable(){
-		$this->getLogger()->info("??");
+		$this->getLogger()->info("停用\nยง7翻譯：PocketMine-MP 伺服插件資源網 (http://PocketMinePlugins.reh.tw)");
 		$this->saveDefaultConfig();
 		
 	}
