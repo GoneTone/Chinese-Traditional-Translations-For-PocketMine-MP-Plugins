@@ -1,5 +1,6 @@
 name: SpecialBlock
 author: Primus
+translations: PocketMine-MP 伺服插件資源網 (http://PocketMinePlugins.reh.tw)
 api: 1.0.0
 version: 1.3.2
 main: Primus\Main
@@ -10,4 +11,4 @@ commands:
   usage: "/sb <get|set|list> <args> [args]"
   permission: sb.cmd
   default: OP
-  description: "SpecialBlock main command"
+  description: "SpecialBlock 主要指令"

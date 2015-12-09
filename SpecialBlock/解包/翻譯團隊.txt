@@ -1,0 +1,2 @@
+語言：zh_TW，PocketMine-MP 伺服插件資源網 翻譯
+http://PocketMinePlugins.reh.tw

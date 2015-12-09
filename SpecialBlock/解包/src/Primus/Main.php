@@ -41,14 +41,14 @@ class Main extends PluginBase implements Listener{
 		));
 		// -------------------------------------------------------------
 		$this->blockCmds = new Config($this->getDataFolder()."block_cmds.yml", Config::YAML, $default);
-		$this->getLogger()->info("Activated");
+		$this->getLogger()->info("??");
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		$this->saveDefaultConfig();
 		$this->reloadConfig();
 		$this->getServer()->getScheduler()->scheduleRepeatingTask(new Timer($this), $this->interval);
 	}
 	public function onDisable(){
-		$this->getLogger()->info("Deactivated");
+		$this->getLogger()->info("??");
 		$this->saveDefaultConfig();
 		
 	}
@@ -143,8 +143,8 @@ class Main extends PluginBase implements Listener{
 			
 			}
 		}else{
-			$this->getLogger()->info('§4Config is incorrectly setup');
-			$this->getLogger()->info('effect-id: '.$this->getConfig()->get('effect-id').' - is not valid');
+			$this->getLogger()->info('§4???????\n7??:PocketMine-MP ??????? (http://PocketMinePlugins.reh.tw)');
+			$this->getLogger()->info('effect-id: '.$this->getConfig()->get('effect-id').' - ??');
 			}
 	}
 	
@@ -161,7 +161,7 @@ class Main extends PluginBase implements Listener{
 							$sender->sendMessage($key.": ". $value);
 							return true;
 						}else{
-							$sender->sendMessage('§4Key not found');
+							$sender->sendMessage('§4Key ???\n7??:PocketMine-MP ??????? (http://PocketMinePlugins.reh.tw)');
 							return true;
 							}
 					}
@@ -171,7 +171,7 @@ class Main extends PluginBase implements Listener{
 							if(isset($args[2])){
 								$this->getConfig()->set($args[1], $args[2]);
 								$this->getConfig()->save();
-								$sender->sendMessage('Key set');
+								$sender->sendMessage('Key ??\n7??:PocketMine-MP ??????? (http://PocketMinePlugins.reh.tw)');
 								$sender->sendMessage($args[1].": ". $args[2]);
 								return true;
 							}else{
@@ -179,17 +179,17 @@ class Main extends PluginBase implements Listener{
 								return false;
 								}
 						}else{
-							$sender->sendMessage('Key not found');
+							$sender->sendMessage('Key ???\n7??:PocketMine-MP ??????? (http://PocketMinePlugins.reh.tw)');
 							return true;
 							break;
 							}
 					}else{
-						$sender->sendMessage('Enter a key you want to change');
+						$sender->sendMessage('???????? key\n7??:PocketMine-MP ??????? (http://PocketMinePlugins.reh.tw)');
 						return false;
 						}
 					case "reload":
 					$this->getConfig()->reload();
-					$sender->sendMessage('Config reloaded.');
+					$sender->sendMessage('???????\n7??:PocketMine-MP ??????? (http://PocketMinePlugins.reh.tw)');
 					return true;
 					case "list":
 					$list = $this->getConfig()->getAll();
