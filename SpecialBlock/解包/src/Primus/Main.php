@@ -143,7 +143,7 @@ class Main extends PluginBase implements Listener{
 			
 			}
 		}else{
-			$this->getLogger()->info('§4???????\n7??:PocketMine-MP ??????? (http://PocketMinePlugins.reh.tw)');
+			$this->getLogger()->info('ยง4配置設定不正確\nยง7翻譯：PocketMine-MP 伺服插件資源網 (http://PocketMinePlugins.reh.tw)');
 			$this->getLogger()->info('effect-id: '.$this->getConfig()->get('effect-id').' - ??');
 			}
 	}
@@ -161,7 +161,7 @@ class Main extends PluginBase implements Listener{
 							$sender->sendMessage($key.": ". $value);
 							return true;
 						}else{
-							$sender->sendMessage('§4Key ???\n7??:PocketMine-MP ??????? (http://PocketMinePlugins.reh.tw)');
+							$sender->sendMessage('ยง4Key 未找到\nยง7翻譯：PocketMine-MP 伺服插件資源網 (http://PocketMinePlugins.reh.tw)');
 							return true;
 							}
 					}
@@ -171,7 +171,7 @@ class Main extends PluginBase implements Listener{
 							if(isset($args[2])){
 								$this->getConfig()->set($args[1], $args[2]);
 								$this->getConfig()->save();
-								$sender->sendMessage('Key ??\n7??:PocketMine-MP ??????? (http://PocketMinePlugins.reh.tw)');
+								$sender->sendMessage('Key 設定\nยง7翻譯：PocketMine-MP 伺服插件資源網 (http://PocketMinePlugins.reh.tw)');
 								$sender->sendMessage($args[1].": ". $args[2]);
 								return true;
 							}else{
@@ -179,17 +179,17 @@ class Main extends PluginBase implements Listener{
 								return false;
 								}
 						}else{
-							$sender->sendMessage('Key ???\n7??:PocketMine-MP ??????? (http://PocketMinePlugins.reh.tw)');
+							$sender->sendMessage('Key 未找到\nยง7翻譯：PocketMine-MP 伺服插件資源網 (http://PocketMinePlugins.reh.tw)');
 							return true;
 							break;
 							}
 					}else{
-						$sender->sendMessage('???????? key\n7??:PocketMine-MP ??????? (http://PocketMinePlugins.reh.tw)');
+						$sender->sendMessage('輸入您想更改的 key\nยง7翻譯：PocketMine-MP 伺服插件資源網 (http://PocketMinePlugins.reh.tw)');
 						return false;
 						}
 					case "reload":
 					$this->getConfig()->reload();
-					$sender->sendMessage('???????\n7??:PocketMine-MP ??????? (http://PocketMinePlugins.reh.tw)');
+					$sender->sendMessage('配置重新載入。\nยง7翻譯：PocketMine-MP 伺服插件資源網 (http://PocketMinePlugins.reh.tw)');
 					return true;
 					case "list":
 					$list = $this->getConfig()->getAll();
