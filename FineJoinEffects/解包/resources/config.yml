@@ -1,0 +1,101 @@
+######################  RECEIVE EFFECTS  ON RESPAWN  ######################
+Enable-Receive-After-Death: true
+############################ PLAYER EFFECTS ############################
+Enable-Message-With-Join: true 
+###Set to false if you had off message
+Message-With-Effects: "You Get §ePlayer §aEffects"
+###Your text with join
+Effect-1-Type: "1"
+###1 Effect type
+Effect-1-Duration: "1200"
+###1 Effect duration
+Effect-1-Amplifier: "0"
+###1 Effect amplifier
+######### 2 Effect #########
+Enable-2-Effect: false
+###Enable 2 Effect
+Effect-2-Type: "2"
+###2 Effect type
+Effect-2-Duration: "1200"
+###2 Effect duration
+Effect-2-Amplifier: "2"
+###2 Effect amplifier
+######### 3 Effect #########
+Enable-3-Effect: false
+###Enable 3 Effect
+Effect-3-Type: "3"
+###3 Effect type
+Effect-3-Duration: "1200"
+###3 Effect duration
+Effect-3-Amplifier: "0"
+###3 Effect amplifier
+######### 4 Effect #########
+Enable-4-Effect: false
+###Enable 4 Effect
+Effect-4-Type: "8"
+###4 Effect type
+Effect-4-Duration: "1200"
+###4 Effect duration
+Effect-4-Amplifier: "5"
+###4 Effect amplifier
+######### 5 Effect #########
+Enable-5-Effect: false
+###Enable 5 Effect
+Effect-5-Type: "21"
+###5 Effect type
+Effect-5-Duration: "1"
+###5 Effect duration
+Effect-5-Amplifier: "19"
+###5 Effect amplifier
+############################ VIP EFFECTS ############################
+Enable-Message-With-VIP-Join: true 
+###Set to false if you had off VIP message
+Message-With-VIP-Effects: "You Get §dVIP §aEffects"
+###Your text with VIP join
+Effect-1-VIP-Type: "1"
+###1 Effect type
+Effect-1-VIP-Duration: "0"
+###1 Effect duration
+Effect-1-VIP-Amplifier: "0"
+###1 Effect amplifier
+######### 2 VIP Effect #########
+Enable-2-VIP-Effect: false
+###Enable 2 VIP Effect
+Effect-2-VIP-Type: "2"
+###2 VIP Effect type
+Effect-2-VIP-Duration: "1200"
+###2 VIP Effect duration
+Effect-2-VIP-Amplifier: "2"
+###2 VIP Effect amplifier
+######### 3 VIP Effect #########
+Enable-3-VIP-Effect: false
+###Enable 3 VIP Effect
+Effect-3-VIP-Type: "3"
+###3 VIP Effect type
+Effect-3-VIP-Duration: "1200"
+###3 VIP Effect duration
+Effect-3-VIP-Amplifier: "0"
+###3 VIP Effect amplifier
+######### 4 VIP Effect #########
+Enable-4-VIP-Effect: false
+###Enable 4 VIP Effect
+Effect-4-VIP-Type: "8"
+###4 VIP Effect type
+Effect-4-VIP-Duration: "1200"
+###4 VIP Effect duration
+Effect-4-VIP-Amplifier: "5"
+###4 VIP Effect amplifier
+######### 5 VIP Effect #########
+Enable-5-VIP-Effect: false
+###Enable 5 VIP Effect
+Effect-5-VIP-Type: "21"
+###5 VIP Effect type
+Effect-5-VIP-Duration: "1"
+###5 VIP Effect duration
+Effect-5-VIP-Amplifier: "19"
+###5 VIP Effect amplifier
+
+################## PERMISSIONS FOR EFFECTS:
+## finejoineffects.player - allow player to get player effects (default true)
+## finejoineffects.vip - allow player to get vip effects (default op)
+########################################
