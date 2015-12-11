@@ -20,7 +20,7 @@ class FineJoinEffects extends PluginBase implements Listener {
           $this->saveDefaultConfig();
           $this->reloadConfig();
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);				
-		$this->getLogger()->info(TextFormat::GREEN . "Activation FineJoinEffects by Asidert");
+		$this->getLogger()->info(TextFormat::GREEN . "激活 FineJoinEffects by Asidert\n§7翻譯：PocketMine-MP 伺服插件資源網 (http://PocketMinePlugins.reh.tw)");
   }
 
   public function onRespawn(PlayerRespawnEvent $event) {
@@ -155,7 +155,7 @@ class FineJoinEffects extends PluginBase implements Listener {
  }
 }
 	public function onDisable() {
-		$this->getLogger ()->info (TextFormat::RED . "Deactivation FineJoinEffects by Asidert" );
+		$this->getLogger ()->info (TextFormat::RED . "停用 FineJoinEffects by Asidert\n§7翻譯：PocketMine-MP 伺服插件資源網 (http://PocketMinePlugins.reh.tw)" );
           $this->saveDefaultConfig();
 	}
 }
