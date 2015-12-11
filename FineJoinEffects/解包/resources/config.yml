@@ -3,7 +3,7 @@ Enable-Receive-After-Death: true
 ############################ PLAYER EFFECTS ############################
 Enable-Message-With-Join: true 
 ###Set to false if you had off message
-Message-With-Effects: "You Get §ePlayer §aEffects"
+Message-With-Effects: "你獲得 §e玩家 §a效果"
 ###Your text with join
 Effect-1-Type: "1"
 ###1 Effect type
@@ -50,7 +50,7 @@ Effect-5-Amplifier: "19"
 ############################ VIP EFFECTS ############################
 Enable-Message-With-VIP-Join: true 
 ###Set to false if you had off VIP message
-Message-With-VIP-Effects: "You Get §dVIP §aEffects"
+Message-With-VIP-Effects: "你獲得 §dVIP §a效果"
 ###Your text with VIP join
 Effect-1-VIP-Type: "1"
 ###1 Effect type
