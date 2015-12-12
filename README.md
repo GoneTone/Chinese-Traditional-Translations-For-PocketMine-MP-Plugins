@@ -9,7 +9,7 @@
 - [X] AshMan
 - [X] BanItemAdd
 - [X] DevTools
-- [ ] FineJoinEffects
+- [X] FineJoinEffects
 - [X] ItemCasePE
 - [X] ServerTest
 - [X] SignStatus
