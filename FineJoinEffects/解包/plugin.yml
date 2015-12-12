@@ -8,11 +8,11 @@ website: http://www.youtube.com/MrAsidert
 permissions:
     finejoineffects:
         default: op
-        description: "Allow to receive ALL effects"
+        description: "允許接收所有效果"
         children:
             finejoineffects.player:
                 default: true
-                description: "Allow to receive player effects"
+                description: "允許接收玩家效果"
             finejoineffects.vip:
                 default: op
-                description: "Allow to receive VIP effects"
+                description: "允許接收 VIP 效果"
